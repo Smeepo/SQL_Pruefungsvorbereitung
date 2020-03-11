@@ -1,0 +1,7 @@
+1. Welcher Kunde hat die meisten Bestellungen aufgegeben?
+2. Welcher Kunde hat den meisten Umsatz verursacht?
+3. Welcher Mitarbeiter hat die meisten verschiedenen Kunden betreut?
+4. Zeigen sie alle Mitarbeiter mit Abteilung an (Auch jene ohne Abteilung)
+5. Welche Bestellung hat die meisten Positionen?
+6. Welche Kunden haben mehr als 20 mal bestellt?
+7. Welche Angestellte haben mehr Bestellungen vermittelt als der Durchschnitt?

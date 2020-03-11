@@ -1,0 +1,53 @@
+1)
+SELECT K.name, K.vname, COUNT(*) as "Anzahl Bestellungen"
+FROM kunden K
+    JOIN bestellungen B
+        ON K.id = B.kunde_id
+GROUP BY K.id
+
+2)
+SELECT CONCAT(K.name, ', ', K.vname) AS 'Name', ROUND(SUM(BP.menge * P.preis), 2) AS 'Summe'
+FROM kunden K
+    JOIN bestellungen B
+        ON B.kunde_id = K.id
+    JOIN bestellpositionen BP
+        ON BP.best_id = B.id
+    JOIN produkte P
+        ON P.id = BP.produkt_id
+GROUP BY K.id
+
+3)
+SELECT  worker_id, COUNT(DISTINCT kunde_id)
+FROM bestellungen
+GROUP BY worker_id
+ORDER BY COUNT(DISTINCT kunde_id) DESC;
+
+4)
+SELECT an.id, an.vname, an.name, ab.name
+FROM angestellte an
+    LEFT JOIN abteilungen ab
+        ON abt_id = ab.id
+
+5)
+SELECT b.id, COUNT(*)
+FROM bestellungen b
+    JOIN bestellpositionen bp
+        ON b.id = bp.best_id
+GROUP BY b.id
+ORDER BY COUNT(*) DESC;
+
+6)
+SELECT k.id, k.name, COUNT(*) AS Bestellungen
+FROM kunden k
+    JOIN bestellungen b
+        ON k.id = b.kunde_id
+GROUP BY k.id
+HAVING Bestellungen > 20;
+
+7)
+SELECT an.id, an.vname, an.name, COUNT(*)
+FROM angestellte an
+    JOIN bestllungen b
+        ON an.id = b.worker_id
+GROUP BY an.id
+HAVING COUNT(*) > (SELECT COUNT(*) FROM bestellungen) / (SELECT COUNT(*) FROM angestellte)

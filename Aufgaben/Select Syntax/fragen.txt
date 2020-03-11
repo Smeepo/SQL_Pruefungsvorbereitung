@@ -1,0 +1,45 @@
+1)
+Bringen Sie die folgenden Bestandteile des SELECT-Befehls
+in die richtige Reihenfolge
+(es gibt Begriffe, die an zwei bzw. drei Stellen gehören):
+
+<bedingung> – DISTINCT – FROM – GROUP BY – HAVING –
+ORDER BY – SELECT – <spalten> – <tabelle> – WHERE
+
+2)
+Welche der in 1) genannten Bestandteile eines SELECT-Befehls sind unbedingt erforderlich?
+
+3)
+Welche der folgenden Abfragen sind syntaktisch korrekt?
+
+1. SELECT * FROM angestellte;
+2. SELECT id, name FROM angestellte;
+3. SELECT id, name FROM angestellte, abteilungen;
+4. SELECT id, name, abt_id FROM angestellte, abteilungen;
+5. SELECT ab.id, vname FROM angestellte, abteilungen ab;
+6. SELECT ab.id, vname, Abteilung ab.name FROM angestellte, abteilungen ab;
+7. SELECT ab.id, vname, ab.name Abteilung FROM angestellte, abteilungen ab;
+8. SELECT ab.id, an.name, ab.name FROM angestellte an, abteilungen ab;
+
+4)
+Welche der folgenden Suchbedingungen sind syntaktisch richtig, welche nicht? Welche korrekten Bedingungen liefern immer FALSE als Ergebnis?
+
+1. WHERE name NOT = 'Meyer';
+2. WHERE 1 = 2;
+3. WHERE NOT name LIKE 'M%';
+4. WHERE birth_date LIKE '1980%';
+5. WHERE id BETWEEN 20 AND 10;
+6. WHERE telefon IS NULL;
+7. WHERE id IS NULL;
+8. WHERE id <> NULL;
+9. WHERE name LIKE 'L%' AND CONTAINING 'a';
+10. WHERE id IN (1, 3, 'A');
+11. WHERE id IN (1, 3, '5');
+
+5)
+Formulieren Sie die folgenden Aussagen als Bedingungen der WHERE-Klausel zur Tabelle Angestellte / Kunden.
+
+Der Vorname lautet 'Petra'.
+Der Name enthält die Zeichen 'mann'.
+Der Name beginnt mit 'A', es handelt sich um Abteilung 3.
+Es ist keine Telefonnummer gespeichert.

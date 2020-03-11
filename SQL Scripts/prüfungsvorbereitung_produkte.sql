@@ -1,0 +1,10 @@
+INSERT INTO prüfungsvorbereitung.produkte (id, preis, name) VALUES (1, 24.99, 'Stuhl');
+INSERT INTO prüfungsvorbereitung.produkte (id, preis, name) VALUES (2, 99.99, 'Tisch');
+INSERT INTO prüfungsvorbereitung.produkte (id, preis, name) VALUES (3, 9.99, 'Geschirr-Set');
+INSERT INTO prüfungsvorbereitung.produkte (id, preis, name) VALUES (4, 399.99, 'Bett');
+INSERT INTO prüfungsvorbereitung.produkte (id, preis, name) VALUES (5, 149.99, 'Schrank');
+INSERT INTO prüfungsvorbereitung.produkte (id, preis, name) VALUES (6, 4.99, 'Kram');
+INSERT INTO prüfungsvorbereitung.produkte (id, preis, name) VALUES (7, 7.95, 'Zeug');
+INSERT INTO prüfungsvorbereitung.produkte (id, preis, name) VALUES (8, 123.45, 'Sachen');
+INSERT INTO prüfungsvorbereitung.produkte (id, preis, name) VALUES (9, 2.99, 'Klopapier');
+INSERT INTO prüfungsvorbereitung.produkte (id, preis, name) VALUES (10, 1, 'Stift');

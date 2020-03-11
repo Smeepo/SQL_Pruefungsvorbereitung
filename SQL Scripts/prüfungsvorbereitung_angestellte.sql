@@ -1,0 +1,11 @@
+INSERT INTO prüfungsvorbereitung.angestellte (id, vname, name, abt_id, birth_date) VALUES (1, 'Sabine', 'Meier', 3, '1969-10-10');
+INSERT INTO prüfungsvorbereitung.angestellte (id, vname, name, abt_id, birth_date) VALUES (2, 'Frauke', 'Wagner', 2, '1972-01-08');
+INSERT INTO prüfungsvorbereitung.angestellte (id, vname, name, abt_id, birth_date) VALUES (3, 'Albert', 'Hoffmann', 1, '1975-06-25');
+INSERT INTO prüfungsvorbereitung.angestellte (id, vname, name, abt_id, birth_date) VALUES (4, 'Sabine', 'Meier', 2, '1976-11-04');
+INSERT INTO prüfungsvorbereitung.angestellte (id, vname, name, abt_id, birth_date) VALUES (5, 'Friedrich-Wilhelm', 'Hoffmann', null, '1977-08-15');
+INSERT INTO prüfungsvorbereitung.angestellte (id, vname, name, abt_id, birth_date) VALUES (6, 'Lisbeth', 'Meier', 2, '1983-11-01');
+INSERT INTO prüfungsvorbereitung.angestellte (id, vname, name, abt_id, birth_date) VALUES (7, 'Peter', 'Fischer', null, '1991-08-14');
+INSERT INTO prüfungsvorbereitung.angestellte (id, vname, name, abt_id, birth_date) VALUES (8, 'Marie', 'Müller', 3, '1994-02-26');
+INSERT INTO prüfungsvorbereitung.angestellte (id, vname, name, abt_id, birth_date) VALUES (9, 'Otto von', 'Wagner', 2, '1995-06-23');
+INSERT INTO prüfungsvorbereitung.angestellte (id, vname, name, abt_id, birth_date) VALUES (10, 'Viktor', 'Schäfer', 3, '1999-08-30');
+INSERT INTO prüfungsvorbereitung.angestellte (id, vname, name, abt_id, birth_date) VALUES (11, 'Peter', 'Arbeitsloser', null, '2020-03-10');

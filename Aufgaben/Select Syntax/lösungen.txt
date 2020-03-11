@@ -1,0 +1,34 @@
+1)
+SELECT DISTINCT <spalten>
+  FROM <tabelle>
+ WHERE <bedingung>
+ GROUP BY <spalten>
+   HAVING <bedingung>
+ ORDER BY <spalten>;
+
+2)
+SELECT <spalten> FROM <tabelle>
+
+3)
+Richtig sind 1, 2, 5, 7, 8.
+
+Falsch sind 3, 4 (id und name sind mehrdeutig), 6 (Spaltenname und -Alias in falscher Reihenfolge).
+
+4)
+1. Falsch, name und NOT vertauscht. ( '<>'-Operator auch möglich )
+2. Richtig, immer FALSE
+3. Richtig, weil die Teilbedingung "Name LIKE 'M%'" verneint wird. Ebenfalls richtig wäre es, das NOT hinter <wert1>, also hinter Name zu schreiben.
+4. Richtig, weil das Jahr laut ISO 8601 am Anfang steht.
+5. Richtig, immer FALSE: es gibt keine Zahl „größer/gleich 20“ und gleichzeitig „kleiner/gleich 10“.
+6. Richtig.
+7. Richtig, immer FALSE, weil die id als Schlüsselfeld niemals NULL sein kann.
+8. Richtig, immer FALSE, weil ein Vergleich mit NULL mittels Operator immer NULL zurückgibt, und NULL als false interpretiert wird. (WICHTIG: gilt auch für '=', WHERE id = NULL; würde auch immer FALSE liefern)
+9. Falsch, weil Name in der zweiten Bedingung hinter AND fehlt.
+10. Richtig, obwohl 'A' keine Zahl ist werden die meisten Datenbanksysteme das akzeptieren
+11. Richtig, '5' wird zudem automatisch zu einer Zahl konvertiert.
+
+5)
+WHERE vname = 'Petra';
+WHERE name LIKE '%mann%';
+WHERE name LIKE 'A%' AND abt_id = 3;
+WHERE telefon IS NULL OR telefon = '';
