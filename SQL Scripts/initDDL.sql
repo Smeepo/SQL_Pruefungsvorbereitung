@@ -11,7 +11,7 @@ create table angestellte
         primary key,
     vname      varchar(30) not null,
     name       varchar(30) not null,
-    abt_id     int         not null,
+    abt_id     int         null,
     birth_date date        not null
 );
 
